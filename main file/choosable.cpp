@@ -6,6 +6,8 @@
 void Choosable::activeLogic(std::vector<Choosable>& buttons){
 	up.update();
 	down.update();
+	right.update();
+	left.update();
 	switch(direction){
 		case Direction::upDown:
 			//std::cout<<"entered";
@@ -14,15 +16,23 @@ void Choosable::activeLogic(std::vector<Choosable>& buttons){
 				current--;
 			
 			} 
-			if(down.onPress and current < buttons.size() - 1){
+			else if(down.onPress and current < buttons.size() - 1){
 				perCurrent = current;
 				current++;
 			}
-			//std::cout<<current<<'\n';
-			buttons[perCurrent].selected = false;
-			buttons[current].selected = true;
 			break;
+		case Direction::leftRight:
+			if(right.onPress and current > 0){
+				perCurrent = current;
+				current--;
+			}
+			else if(left.onPress and current < buttons.size()-1){
+				perCurrent = current;
+				current++;
+			}
 	}
+	buttons[perCurrent].selected = false;
+	buttons[current].selected = true;
 }
 
 void Choosable::drawB(sf::RenderWindow& win, std::vector<Choosable>& buttons, Key &key){	

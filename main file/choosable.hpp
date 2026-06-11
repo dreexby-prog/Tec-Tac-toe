@@ -26,8 +26,8 @@ class Choosable : public Selectable{
 		
 		Key up{sf::Keyboard::Scan::W};
 		Key down{sf::Keyboard::Scan::S};
-		//Key left{sf::Keyboard::Scan::D};
-		//Key right{sf::Keyboard::Scan::A};
+		Key left{sf::Keyboard::Scan::D};
+		Key right{sf::Keyboard::Scan::A};
 		
 		
 		

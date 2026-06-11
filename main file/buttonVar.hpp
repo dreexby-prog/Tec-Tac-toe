@@ -5,3 +5,5 @@
 #include <vector>
 
 extern std::vector<Choosable> menu_buttons;
+
+extern std::vector<Choosable> chMintRose;

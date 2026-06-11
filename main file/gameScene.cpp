@@ -12,7 +12,7 @@ void activeState(){
 			activeMenu();
 			break;
 		case GameState::computer:
-			std::cout<<"Computer\n";
+			activateComputer();
 			break;
 		case GameState::friends:
 			std::cout<<"Friend\n";
