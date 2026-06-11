@@ -1,7 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "buttons.hpp"
+#include "choosable.hpp"
 #include "image.hpp"
 #include <vector>
 
-extern std::vector<Button> menu_buttons;
+extern std::vector<Choosable> menu_buttons;

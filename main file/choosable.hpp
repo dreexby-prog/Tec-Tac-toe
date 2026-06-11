@@ -8,16 +8,16 @@
 //extern Selectable menu_button3(pic2, pic3);
 
 enum class Direction{upDown, leftRight, all};
-class Button : public Selectable{
+class Choosable : public Selectable{
 
 	public:	
-		Button(sf::Texture& idle, sf::Texture& selected): Selectable(idle, selected){};
+		Choosable(sf::Texture& idle, sf::Texture& selected): Selectable(idle, selected){};
 		
 		Direction direction = Direction::upDown;
 
 		//active the condition of buttons;
-		void activeLogic(std::vector<Button> &);
-		void drawB(sf::RenderWindow&, std::vector<Button> &, Key &);
+		void activeLogic(std::vector<Choosable> &);
+		void drawB(sf::RenderWindow&, std::vector<Choosable> &, Key &);
 		
 		sf::Vector2f positionDif = {0, 150 };	
 	private:

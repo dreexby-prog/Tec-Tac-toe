@@ -1,9 +1,9 @@
-#include "buttons.hpp"
+#include "choosable.hpp"
 
 //Selectable menu_button1(pic2, pic3);
 //Selectable menu_button2(pic2, pic3);
 //Selectable menu_button3(pic2, pic3);
-void Button::activeLogic(std::vector<Button>& buttons){
+void Choosable::activeLogic(std::vector<Choosable>& buttons){
 	up.update();
 	down.update();
 	switch(direction){
@@ -25,7 +25,7 @@ void Button::activeLogic(std::vector<Button>& buttons){
 	}
 }
 
-void Button::drawB(sf::RenderWindow& win, std::vector<Button>& buttons, Key &key){	
+void Choosable::drawB(sf::RenderWindow& win, std::vector<Choosable>& buttons, Key &key){	
 	for(int i = 0; i<buttons.size(); i++){
 		buttons[i].position = {position.x + positionDif.x * i, position.y + positionDif.y * i};
 		buttons[i].draw(win);
