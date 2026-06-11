@@ -9,25 +9,13 @@ void activeState(){
 	switch(state){
 	
 		case GameState::menu:
-			//std::cout<<"Menu";
-			win.draw(menu_backround);
-				
-			menu_button[0].drawB(win, menu_button, keyx);
-			menu_button[0].activeLogic(menu_button);
-			//menu_button[0].update(keyx);
-			//keyx.update();
-			if(menu_button[0].released) std::cout<<"entered\n" ;
-
-			//menu_button1.selected = true;
-			//menu_button1.update(key);
-			//menu_button1.draw(win);
-			//button1.draw(win);
+			activeMenu();
 			break;
 		case GameState::computer:
-			//std::cout<<"Computer";
+			std::cout<<"Computer\n";
 			break;
 		case GameState::friends:
-			//std::cout<<"Friend";
+			std::cout<<"Friend\n";
 			break;
 	
 	}

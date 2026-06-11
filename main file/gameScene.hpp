@@ -3,9 +3,9 @@
 #include <iostream>
 #include "image.hpp"
 #include "a.hpp"
-#include "buttons.hpp"
-#include "key.hpp"
 #include "buttonVar.hpp"
+#include "keys.hpp"
+#include "menu.hpp"
 enum class  GameState {menu, computer, friends};
 
 extern GameState state;

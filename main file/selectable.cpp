@@ -1,30 +1,21 @@
 #include "selectable.hpp"
-void Selectable::update(Key& k){
-	k.update();
+void Selectable::update(Key& key){
+	key.update();
 
-	pressed = false;
-	released = false;
 	onRelease = false;
 	onPress = false;
-	
-	// ----- ignore this
-	if(k.onPress){
-		onPress = true;
-	}
-	if(k.onRelease){
-		onRelease = true;
-	}
+
 	// ------------------------
 
-	if(selected and onPress){
-		pressed = true;
+	if(selected and key.onPress){
+		onPress = true;
 		//std::cout<<"pressed!!\n";
 	}
 	
 	// so when released the button is going to its work, not at the pressing
 	// useful to be able to hold the button before it enters new event
-	if(selected and onRelease){
-		released = true;
+	if(selected and key.onRelease){
+		onRelease = true;
 		//std::cout<<"released\n";
 	}
 

@@ -4,7 +4,6 @@
 #include "a.hpp"
 #include <algorithm>
 #include "gameScene.hpp"
-
 int main(){
 	win.setFramerateLimit(60);
         while(win.isOpen()){
