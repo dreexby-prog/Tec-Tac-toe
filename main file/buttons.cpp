@@ -29,9 +29,9 @@ void Button::drawB(sf::RenderWindow& win, std::vector<Button>& buttons, Key &key
 	for(int i = 0; i<buttons.size(); i++){
 		buttons[i].position = {position.x + positionDif.x * i, position.y + positionDif.y * i};
 		buttons[i].draw(win);
-		buttons[i].update(key);
 	
-	}	
+	}
+	buttons[current].update(key);		
 	
 
 }
