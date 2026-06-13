@@ -7,6 +7,7 @@
 #include "keys.hpp"
 #include "menu.hpp"
 #include "computer.hpp"
+
 enum class  GameState {menu, computer, friends};
 
 extern GameState state;

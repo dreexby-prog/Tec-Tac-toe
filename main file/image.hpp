@@ -17,3 +17,13 @@ extern std::vector<sf::Texture> chRose_texture;
 extern sf::Texture pic4;
 extern sf::Sprite computer_backround1;
 
+// x and o
+extern sf::Texture o_texture;
+//extern sf::Sprite o_sprite;
+
+extern sf::Texture x_texture;
+//extern sf::Sprite x_sprite;
+
+extern sf::Texture x_o_backround_texture;
+
+extern sf::Texture selection_texture;

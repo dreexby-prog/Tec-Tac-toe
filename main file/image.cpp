@@ -14,3 +14,12 @@ std::vector<sf::Texture> chRose_texture = {sf::Texture("images/choose rose.png")
 
 sf::Texture pic4("images/computer backround.png");
 sf::Sprite computer_backround1(pic4);
+
+sf::Texture o_texture("images/o.png");
+//sf::Sprite o_sprite(o_texture);
+sf::Texture x_texture("images/x.png");
+//sf::Sprite x_sprite(x_texture);
+
+sf::Texture x_o_backround_texture("images/x o backround.png");
+
+sf::Texture selection_texture("images/selection.png");
